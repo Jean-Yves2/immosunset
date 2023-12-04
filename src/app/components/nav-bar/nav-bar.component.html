@@ -1,1 +1,7 @@
-<p>nav-bar works!</p>
+<div class="nav-bar">
+  <img src="../../../favicon.ico" alt="logo">
+
+  <section *ngFor="let categorie of  navBarCategorie">
+    <a href="#">{{categorie}}</a>
+  </section>
+</div>
