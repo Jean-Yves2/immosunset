@@ -1,7 +1,7 @@
 <div class="nav-bar">
   <img src="../../../favicon.ico" alt="logo">
-  <p>Accueil</p>
-  <p>Blog</p>
-  <p>A propos</p>
-  <p>Contact</p>
+
+  <section *ngFor="let categorie of  navBarCategorie">
+    <a href="#">{{categorie}}</a>
+  </section>
 </div>
