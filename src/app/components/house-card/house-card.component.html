@@ -1,14 +1,14 @@
-<div class="house_card">
+<div *ngFor="let home of homeList" class="house_card">
   <section class="house_card-title">
     <div class="house_card-title-avatar"><img src="../../../assets/image/avatar.png" alt=""></div>
     <div class="house_card-title-block">
-      <h3>Title</h3>
-      <p>SubTitle</p>
+      <h3>{{home.tile}}</h3>
+      <p>{{home.subTitle}}</p>
     </div>
     <div><ng-icon name="heroShareSolid"></ng-icon></div>
   </section>
   <section class="house_card-image">
-    <img src="../../../assets/image/maison 3.png" alt="" />
+    <img src="../../../assets/image/{{home.image}}.png" alt="" />
   </section>
   <section class="house_card-footer">
     <div class="house_card-footer_text">
