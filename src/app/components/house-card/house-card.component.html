@@ -1,0 +1,28 @@
+<div *ngFor="let home of homeList" class="house_card">
+  <section class="house_card-title">
+    <div class="house_card-title-avatar"><img src="../../../assets/image/avatar.png" alt=""></div>
+    <div class="house_card-title-block">
+      <h3>{{home.tile}}</h3>
+      <p>{{home.subTitle}}</p>
+    </div>
+    <div><ng-icon name="heroShareSolid"></ng-icon></div>
+  </section>
+  <section class="house_card-image">
+    <img src="../../../assets/image/{{home.image}}.png" alt="" />
+  </section>
+  <section class="house_card-footer">
+    <div class="house_card-footer_text">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non error
+        aperiam
+      </p>
+    </div>
+    <div class="house_card-footer_option">
+      <strong>Voir +</strong>
+      <div class="house_card-footer_option-like">
+        <ng-icon name="heroHeartSolid" style="color: red;"></ng-icon>
+        <ng-icon name="heroBellAlertSolid" ></ng-icon>
+      </div>
+    </div>
+  </section>
+</div>
