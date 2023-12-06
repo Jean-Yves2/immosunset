@@ -1,0 +1,64 @@
+.footer {
+  &_card {
+    display: flex;
+    color: white;
+    background-color: #11111f;
+    //height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &-logo {
+      width: 24%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+    &-slogan {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: #eaaa00;
+      }
+    }
+    &-plan {
+      width: 24%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      a {
+        color: #eaaa00;
+      }
+    }
+    &-contact {
+      width: 24%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      a {
+        color: #eaaa00;
+      }
+      &-logo{width: 100%;
+      }
+
+    }
+  }
+  &_copyrigth {
+    display: flex;
+    height: 40px;
+    color: white;
+    background-color: #000000;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+}
